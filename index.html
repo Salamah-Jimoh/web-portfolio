@@ -9,7 +9,7 @@
 </head>
 <div id="main">
 <div class= "main-header">
-    <h1> Salamah</h1>
+    <h1 class="fancy"> Salamah</h1>
 <!--</div> !--main header div starts-->
 <div class ="heading-menu">
 <div id="main-nav">
@@ -48,7 +48,7 @@
 <div class ="heading-menu">
 <div class="banner">
     <div id="imganime">
-        <img src="image.jpg" alt="banner image">
+        <img src="image.jpg" alt="banner image" width="450px" height="500px">
         </div><!--div anime stops-->
 </div><!--banner ends-->
 <div class ="container">
@@ -72,6 +72,7 @@
    <li class="prof"> GITHUB</li>
     <li class="prof"> GIT</li>
     <li class="prof">BOOTSTRAP</li>
+    <li class="prof">WAMP</li>
     <!-- <li class="prof">BASIC WEB GRAPHICS</li>
  <li class="prof">COPYWRITING</li>-->
     
@@ -99,15 +100,15 @@
     <div class="box2a">
             <img src="icon2.png" alt="bad">
             <h2>Web hosting and Management</h2>
-            <p> I deploy websites to the internet and make them accessible via the World Wide web(www) by employing the use of 
+            <p> I deploy websites to the internet and make them accessible via the World Wide Web(www) by employing the use of 
                  reliable web hosting platforms. I also push updates from a previously hosted website to the internet.
               </p></img>
     </div><!--second box ends-->
     <div class="box3a">
         <img src="icon3.png" alt="bad">
         <h2>Content Creation</h2>
-        <p>From writing short descriptons about a product or an orgainzation
-            to writing blog post and articles ; 
+        <p>From writing short descriptons about a product or an organization
+            to writing blog posts and articles ; 
             I provide detailed and easily comprehensible contents for different web pages according to the standard required for the website.
           </p></img>
     </div><!--third box ends-->
@@ -121,43 +122,42 @@
         <a id ="projects"></a>
         <h1 class="sub-heading">Projects</h1>
         <div class="projects-container">
-            <div class="first-item"> <h2> A website for a medical diagnostic center</h2>
-                      <p>Status:Ongoing</p>
-                <img src="img1.jpg" width="350px" height="400px"><br>
-                <a href="https://www.goldstandard.care" class="pro">View</a>
+            <div class="first-item"><h2>A prototype website for a digital corporation</h2>
+                <img src="img1.png" width="320px" height="400px"><br>
+                <a href="https://digitally.netlify.app" class="pro">View</a>
             </div>
             <div class="second-item">
-                <h2> A prototype website for a digital corporation</h2>
-                     </h2>
-                <img src="img2.jpg" width="350px" height="400px"><br>
-                <a href="https://digitally.netlify.app" class="pro"> View</a>
+                
+                <h2> A website for a medical diagnostic center</h2>
+                <p>Status:Ongoing</p></h2>
+                <img src="img2.jpg" width="320px" height="400px"><br>
+                <a href="https://www.goldstandard.care" class="pro"> View</a>
     
                     </div>
             <div class="third-item">
-                <h2> A creative site for multiple use</h2>
+                <h2>Landing page for a website</h2>
                      </h2>
-                     
-                <img src="img3.jpg" width="350px" height="400px"><br>
+                     <img src="img3.png" width="320px" height="400px"><br>
                 <a href="https://multily.netlify.app" class="pro">View</a>
             </div>
            <div class="fourth-item">
                 <h2> A wedding page website</h2>
                      </h2>
                    
-                <img src="img4.jpg" width="350px" height="400px"><br>
+                <img src="img4.png" width="320px" height="400px"><br>
                 <a href="https://weddingly.netlify.app" class="pro">View</a>
             </div>
             <div class="fifth-item">
-                <h2> A number guessing mini game made with css</h2>
+                <h2>Number guesser! A mini game made with Javascript</h2>
                      </h2>
                      
-                <img src="img5.jpg" width="350px" height="400px"><br>
+                <img src="img5.png" width="320px" height="400px"><br>
                 <a href="https://salamah-jimoh.github.io/number/" class="pro">View</a>
             </div>
             <div class="sixth-item">
-                <h2>Landing page for a small business</h2>
-                <img src="img6.jpg" width="350px" height="400px"><br>
-                <a href="https://salamah-jimoh.github.io/simple/" class="pro">View</a>
+                <h2>A filterable contact list</h2>
+                <img src="img6.png" width="320px" height="400px"><br>
+                <a href="https://salamah-jimoh.github.io/list/" class="pro">View</a>
             </div>
         </div> 
         <!--form starts-->
@@ -201,6 +201,34 @@
 </div><!--main id stops-->
 </body>
 <script>
+     const text=document.querySelector(".fancy")
+       const testContent=text.textContent;
+       const str=testContent.split("");
+       text.textContent="";
+       for(let i=0; i < str.length; i++){
+           text.innerHTML +="<span>" +str[i]+ "</span>";
+           console.log(i);
+       }
+
+       let char=0;
+       let timer=setInterval(onTick, 1000);
+       function onTick(){
+           
+       }
+
+       function onTick(){
+           const span =text.querySelectorAll('span')[char];
+          span.classList.add('style');
+          char++
+           if(char=== str.length){
+            complete();
+            return;
+           }
+       }
+      function complete(){
+           clearInterval(timer);
+           timer=null;
+       }
     function OpenSideMenu(){
         document.getElementById('sideMenu').style.width="200px";
         document.getElementById('main').style.marginLeft="200px";

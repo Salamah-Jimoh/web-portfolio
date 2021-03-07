@@ -20,7 +20,27 @@ a{
 .btn:hover{
     background-color: red;
 }
+/*h1 style*/
+.fancy{
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 2rem;
+}
+span{
+    transition: all 0.5s ease;
 
+}
+span.style{
+  animation-name: salamah;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes salamah{
+    0%{color:white;}
+    50%{color:rgb(243, 104, 127);}
+    75%{color:pink;}
+    100%{color:pink;}
+}
 .main-header{
     background-color: black;
     color:white;
@@ -217,10 +237,7 @@ align-items: flex-end;
     list-style-image: url('boot.png');
 }
 .list :nth-child(8){
-    list-style-image: url('art.png');
-}
-.list :nth-child(9){
-    list-style-image: url('write.png');
+    list-style-image: url('wamp.png');
 }
 .prof{
     padding:10px;
@@ -371,8 +388,10 @@ align-items: flex-end;
         height:500px;
     }
     #imganime{
-        width:450px;
+        width:400px;
         height:500px;
+       
+        
        
 
         
