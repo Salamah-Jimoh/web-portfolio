@@ -103,6 +103,7 @@ openHire.addEventListener('click', ()=>{
     contactForm.style.display='block';
 })
 /// Close contact form on submit
+/*
 contactForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     if(contactName.value==='' || contactMail ==='' || contactMessage ===''){
@@ -125,7 +126,7 @@ contactForm.addEventListener('submit', (e)=>{
            },'5000');
            errorContact.style.display='none'
        } 
-})
+})*/
 // Display Info on enter
 function displayInfoOnEnter(image, info){
     image.style.display='none';
