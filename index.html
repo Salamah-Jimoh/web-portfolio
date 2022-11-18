@@ -3,239 +3,258 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title> Salamah</title>
+    <title> Salamah | Frontend Developer</title>
+    <!--CSS here-->
 <link rel= "stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <link rel="shortcut icon" type="image/jpg" href="image.jpg">
 </head>
-<div id="main">
-<div class= "main-header">
-    <h1 class="fancy"> Salamah</h1>
-<!--</div> !--main header div starts-->
-<div class ="heading-menu">
-<div id="main-nav">
-    <span class="open-side" style="float:left;">
-        <a href="#" onClick="OpenSideMenu()">
-            <svg width="30" height="30">
-                <path d ="M0, 5, 30, 5" stroke="#fff" stroke-width="5"/>
-                <path d ="M0, 14, 30, 14" stroke="#fff" stroke-width="5"/>
-                <path d ="M0, 23, 30, 23" stroke="#fff" stroke-width="5"/>
-                </svg>
-        </a>
-    </span>
-    <ul class= "nav-ul">
-    <div class ="big-p">
-        <li class ="big-p"><a href="index.html">Home</a></li>
-        <li class ="big-p"><a href ="#about">About</a></li>
-        <li class ="big-p"><a href ="#projects">Projects</a></li>
-        <li class ="big-p"><a href ="#contact">Contact</a></li>
-        <li class ="big-p"><a href ="#resume">Resume</a></li>
-     
-    </ul>
-    </div><!--nav ul stops-->    
-</div><!--main nav stops-->
-<!--side menu starts-->
-<div id="sideMenu" class="side-nav">
-    <a href="#" class="btn-close" onClick="CloseSideMenu()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</div>
-<!--sidenav ends-->
-</div><!--main header div stops-->
-
-</div>
-<div class ="heading-menu">
-<div class="banner">
-    <div id="imganime">
-        <img src="image.jpg" alt="banner image" width="450px" height="500px">
-        </div><!--div anime stops-->
-</div><!--banner ends-->
-<div class ="container">
-
-<main class="main">
-    <a id ="about"></a>
-<div class="box1">
-    <p> Hi I'm Salamah, A freelance Frontend developer. I build and design dynamic and fully functional websites for all types of 
-        businesses, organizations, corporations
-        and agencies.</p>
-</div><!--1 ends here-->
-<div class="pg-br"></div>
-<div class="box2">
-<h1> Languages And Tools I Work With</h1>
-<!--icons on every list item-->
-<ul class="list">
-<li class="prof">HTML</li>
- <li class="prof">CSS</li>
-   <li class="prof"> VANILLA JAVASCRIPT</li>
-   <li class="prof">WORDPRESS</li>
-   <li class="prof"> GITHUB</li>
-    <li class="prof"> GIT</li>
-    <li class="prof">BOOTSTRAP</li>
-    <li class="prof">WAMP</li>
-    <!-- <li class="prof">BASIC WEB GRAPHICS</li>
- <li class="prof">COPYWRITING</li>-->
-    
-
-    </ul>
-    
-
-</div>
-<!--div 2 ends here-->
-
-
-</main>
-<!--services-->
-<div class="pg-br"></div>
-<h1 class="sub-heading" >Services I Provide</h1>
-<div class="review1">
-    <div class="box1a">
-        <img src="icon1.png" alt="bad"> 
-        <h2>Web design and development</h2>
-        <p> I build, design and maintain websites. 
-            My services encompasses designing web page layouts and appearances, 
-            enhancing users interface and adding functionalities to a website.
-            </p></img>
-    </div><!--first boc=x ends-->
-    <div class="box2a">
-            <img src="icon2.png" alt="bad">
-            <h2>Web hosting and Management</h2>
-            <p> I deploy websites to the internet and make them accessible via the World Wide Web(www) by employing the use of 
-                 reliable web hosting platforms. I also push updates from a previously hosted website to the internet.
-              </p></img>
-    </div><!--second box ends-->
-    <div class="box3a">
-        <img src="icon3.png" alt="bad">
-        <h2>Content Creation</h2>
-        <p>From writing short descriptons about a product or an organization
-            to writing blog posts and articles ; 
-            I provide detailed and easily comprehensible contents for different web pages according to the standard required for the website.
-          </p></img>
-    </div><!--third box ends-->
-        </div><!--first reviw stops-->
-    
+<!--Nav-->
+<nav>
+ <div class="logo"> <p id ="fancy"> Salamah </p></div>
+<!--Desktop menu-->
+<div class="menu">
+ <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+  </div><!--Desktop Menu ends-->
+          <!--Mobile menu-->
+         
       
+    <div class="mobile-menu" >
+        <i class="fa fa-bars" id="menu-open"></i>
+        <div class="menu-expand" id="menu-expand">
+        <a href="#"  id="menu-close"> &times; </a>
+    <ul>
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#services">Services</a></li>
+        <li class="menu-item"><a href="#projects">Projects</a></li>
+        <li class="menu-item"><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+    </div><!--Mobile Menu ends-->
+    </nav><!--Nav ends-->
 
+<!--Hero section starts-->
+<main id="main">
+ <section id="hero" class="hero-container">
+  <header class="small-intro"><h1>Hi, I'm Salamah, a Freelance Frontend Developer</h1> 
+    <p>I have a thing for writing codes and bringing ideas to life with codes</p>
+  </header>
+  <div class="hero-img"><img src="assets/image.jpg" alt="An avatar image of a lady wearing a pink Hijab"></div>
+ </section>
+<!--Hero section endss-->
 
-        <!--projects starts-->
-        <div class="pg-br"></div>
-        <a id ="projects"></a>
-        <h1 class="sub-heading">Projects</h1>
-        <div class="projects-container">
-            <div class="first-item"><h2>A prototype website for a digital corporation</h2>
-                <img src="img1.png" width="320px" height="400px"><br>
-                <a href="https://digitally.netlify.app" class="pro">View</a>
+<!--About section starts--> 
+<section class="about-container" id="about">
+    <img src="assets/setup.jpg" alt=" A picture of a desktop setup">
+<div class="intro-text">
+   <header> <h2>Curiosity killed the cat?! <i class="fa-solid fa-cat"></i></h2></header>
+   <p>So they say! But in this case, curiosity transitioned me from being an average microbiology undergrad to a frontend developer with
+    experience developing tons of fully functional websites.<br><br>
+    Hi, people call me Salamah and I am a frontend developer who is passionate about solving problems, improving user's experience
+    and translating designs and requirements into utilizable codes.
+    I am currently learning <a>SASS</a>
+    </p> 
+ </div>
+</section>
+<!--About section ends-->  
+<!--Services section starts-->  
+<section class="services-container" id="services">
+    <header><h3>What I do</h3></header>
+<div class="container-service">
+    <div class="service1">
+<h4>Website Development</h4>
+<p>I build and manage websites from its initial designs to its completion using appropriate languages and technologies
+    <br>   
+With experience gathered from working with different clients, I write SEO friendly codes and also offer helpful assistance
+in writing an optimized website content.  
+</p>
+    </div>
+    <div class="service2">
+        <h4>Accessible Designs</h4>
+        <p>As an advocate for web accessiblilty; I always put extra effort to ensure that all users, regardless of thier disablity or device
+            get the most experience from using a website by strictly following HTML semantics and taking interactive elements into account.
+        </p>
             </div>
-            <div class="second-item">
-                
-                <h2> A website for a medical diagnostic center</h2>
-                <p>Status:Ongoing</p></h2>
-                <img src="img2.jpg" width="320px" height="400px"><br>
-                <a href="https://www.goldstandard.care" class="pro"> View</a>
-    
-                    </div>
-            <div class="third-item">
-                <h2>Landing page for a website</h2>
-                     </h2>
-                     <img src="img3.png" width="320px" height="400px"><br>
-                <a href="https://multily.netlify.app" class="pro">View</a>
-            </div>
-           <div class="fourth-item">
-                <h2> A wedding page website</h2>
-                     </h2>
-                   
-                <img src="img4.png" width="320px" height="400px"><br>
-                <a href="https://weddingly.netlify.app" class="pro">View</a>
-            </div>
-            <div class="fifth-item">
-                <h2>Number guesser! A mini game made with Javascript</h2>
-                     </h2>
-                     
-                <img src="img5.png" width="320px" height="400px"><br>
-                <a href="https://salamah-jimoh.github.io/number/" class="pro">View</a>
-            </div>
-            <div class="sixth-item">
-                <h2>A filterable contact list</h2>
-                <img src="img6.png" width="320px" height="400px"><br>
-                <a href="https://salamah-jimoh.github.io/list/" class="pro">View</a>
-            </div>
-        </div> 
-        <!--form starts-->
-        <div class="pg-br"></div>
-<div id="socials">
-    <p class="text"> Find me on these platforms<br><br></p><small>Click on the icons</small></p>
-    <div class="socials-icons">
-        <a href="https://wa.me/2348123038871"><img src="whatsapp.png" alt="whatsapp icon"></a></img>
-        <a href="https://www.instagram.com/salamah_jimoh/"> <img src="insta.jpeg" alt="instagram icon"></a></img>
-       <a href="https://www.facebook.com/salamah.jimoh.5"> <img src="fb.png" alt="fb icon"></a></img>
-       <a href="http:www.twitter.com/salamah_jimoh"> <img src="twitter.png" alt="twitter icon"></a></img>
-       <a href="https://www.github.com/Salamah-Jimoh"> <img src="git.png" alt="giticon"></a></img>
+    <div class="service3">
+        <h4>Problem Solving</h4>
+        <p>I love communicating ideas, challenging myself and transforming problems into an efficient and usable solution</p>
         </div>
-    
+</div>
+</section> 
+<!--Services section ends-->   
+<!--Stacks and tools section starts-->
+<section>
+    <header><h5>Languages I speak</h5></header>
+    <div class="container-stack">
+<i class="fa-brands fa-html5"></i>
+<i class="fa-brands fa-css3"></i>
+<i class="fa-brands fa-js"></i>
+<i class="fa-brands fa-react"></i>
+<i class="fa-brands fa-git-alt"></i>
+<i class="fa-brands fa-bootstrap"></i>
+<i class="fa-brands fa-sass"></i>
+    </div>
+</section>
+<!--Stacks section ends--> 
+<!--Section for collabs-->
+<section>
+   <div class="collab-section">
+    <h5 class="big-text">Interested in collaborating with me?</h5>
+    <p>I'm always open to discussions, partnerships and open source contributions</p>
+<a class="btn" id="open-collab-form">Let's have a chat <i class = "fa fa-rocket"></i></a>
+   </div>
+</section>
+<!--collab form starts-->
+<section class="collab-container" id="collab">
+    <form method="POST"  title="collaborations" name="Collaborations" netlify>
+        <div class="form-field">
+            <div class="form-validation"></div>
+        <label for="">Enter Your Name</label>
+        <input type="text" name="name" id="">
+    </div>
+    <div class="form-field">
+        <label for="">Enter Your Email</label>
+        <input type="email" name="email" id="" placeholder="example@mail.com">
+    </div>
+    <div class="form-field">
+        <label for="">Enter Your Message</label>
+        <textarea name="message" id="" ></textarea>
+        <!--<input type="email" name="message" class="text-area" id="">-->
+    </div>
+    <div class="form-field">
+        <input type="submit" value="Send" class="submit" class="btn">
+</div>
+    </form>
+    </section>
+<!--Section for compaines start -->
+<section>
+    <header><h5>Organizations I have worked with</h5></header>
+    <div class="container-company">
+        <p><a href="https://www.muslimappealcharity.com" target="_blank">Muslim Appeal</a></p>
+        <p><a href="https://www.drlutheebooks.com" target="_blank">Dr Luthee Books</a></p>
+        <p><a href="https://twitter.com/uIldc_" target="_blank">UILDC</a></p>
+        <p><a href="https://www.championsglobalconsulting.org" target="_blank">CGC</a></p>
+    </div>
+</section>
+<!--collab forms ends-->
+<!--Section for compaines end -->
+<!--Project section starts-->
+<!--<div class="info"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nesciunt ex  officiis veritatis similique iusto!</p><a href="" class="btn">view</a></div>--> 
+<section class="project-container" id="projects">
+    <header><h4>My Recent work</h5></header>
+    <div class="container-project">
+     <div class="project1" id="project1">
+        <img src="assets/drluthee.PNG" alt="Screenshot of Dr luthhe website" id="img1">
+        <div class="info" id="info1">
+          <p> A fully responsive website built with HTML, CSS and JS for a book launch with multiple sections and functionalilties.
+            <br> Includes an anchor tag that leads users to place order on a book.
+          </p>
+            <div class="center"><a href="https://www.drlutheebooks.com" class="btn"target="_blank">View</a></div>
+        </div>
+     </div>
+     <div class="project2" id="project2">
+        <img src="assets/easybank.PNG" alt="Screenshot of easy bank landing page" id="img2">
+        <div class="info" id="info2">
+            <p>Landing page for a bank website bulit with React and Vanilla CSS.
+                Fully responsive and interactive
+            </p>
+            <div class="center"><a href="https://easy-bank-solution.netlify.app" class="btn" target="_blank">View</a></div>
+        </div>
+     </div>
+     <div class="project3" id="project3">
+        <img src="assets/ma.PNG" alt="Screenshot of Muslim appeal page" id="img3">
+        <div class="info" id="info3">
+          <p>A multiple paged Website for a Nigerian charity organization that takes appeals for people in distress.</p>
+            <div class="center"><a href="https://muslimappealcharity.com" class="btn" target="_blank">View</a></div>
+        </div>
+     </div>
+</div>
+<!--second batch of projects-->
+<div class="container-project">
+    <div class="project4" id="project4">
+       <img src="assets/ppp-ass.PNG" alt="Screenshot of spar assistant home page" id="img4">
+       <div class="info" id="info4">
+         <p>A web application built for my University's debate club.It is aimed to ease the way spar rounds are conducted in British Parliamentary style of Debating.
+            <br> It has multiple feautures which are all a faster and better approach to the coventional use of paper and pens to run ballot.
+          
+         </p>
+           <div class="center"><a href="https://spar-assistant.netlify.app" class="btn" target="_blank">View</a></div>
+       </div>
+    </div>
+    <div class="project5" id="project5">
+       <img src="assets/math.PNG" alt="Screenshot of learn math" id="img5">
+       <div class="info" id="info5">
+           <p>Learn math is a website designed for little kids to help them learn basic arithmetry.
+            It is colourful, highly intercative and built specifically for children.
+</p>
+           <div class="center"><a href="https://learn-mathh.netlify.app" class="btn" target="_blank">View</a></div>
+       </div>
+    </div>
+    <div class="project6" id="project6">
+       <img src="assets/dna.PNG" alt="Screenshot of learn DNA pair" id="img6">
+       <div class="info" id="info6">
+         <p>DNA pair is a website that creates a DNA chain by matching a nucleotide base to its corresponding pair
+            <br> It is fast, scalable and display an error when an invalid base is present in the DNA chain.
+         </p>
+           <div class="center"><a href="https://dna-pair.netlify.app/" target="_blank" class="btn">View</a></div>
+       </div>
+    </div>
+</div>
+<div class="resume gh"><a href="https://github.com/Salamah-Jimoh" class="btn" target="_blank">View more <i class="fa-brands fa-github"></i> </a></div>
+</section>
+<!-- Projects section ends--> 
+<!--Contact section starts--> 
+<section class="hire-container" id="contact">
+ <p class="big-text">Need my Services?</p>
+    <p> I'm open to job roles, internships and freelance works </p>
+    <div class="center-hire"> <a class="btn" id="open-hire">Hire me</a></div>
+</section>
+<section class="contact-container" >
+    <form method="POST" name="Contact" title="hire" netlify>
+        <div class="form-field">
+            <div class="form-validation"></div>
+        <label for="">Enter Your Name</label>
+        <input type="text" name="name" id="">
+    </div>
+    <div class="form-field">
+        <label for="">Enter Your Email</label>
+        <input type="email" name="email" id="" placeholder="example@mail.com">
+    </div>
+    <div class="form-field">
+        <label for="">Enter Your Message</label>
+        <textarea name="message" id="" ></textarea>
+        <!--<input type="email" name="message" class="text-area" id="">-->
+    </div>
+    <div class="form-field">
+        <input type="submit" value="Send" class="submit" class="btn">
+</div>
+    </form>
+</section>
+<div class="resume"><a href="" class="btn">View my Resume</a></div>
+<!--Contact section ends--> 
+ <!--footer starts-->
+ <footer>
+    <div class="footer-container">
+        <div class="socials">
+            <a href="https://github.com/Salamah-Jimoh" target="_blank"><i class="fa-brands fa-github"></i></a>
+         <a href="https://www.linkedin.com/in/salamah-jimoh-b8ba6a1ab" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+         <a href="https://twitter.com/salamah_jimoh" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="mail"> <i class="fa fa-envelope"></i> jimohsalamah@gmail.com</div>
+        <div class="attributions"> &copy; 2022 Developed by <a href="https://salamah.netlify.app">Salamah</a></div>
     
     </div>
-    <div class="pg-br"></div>
-    
-    <div class="box3">
-        <!--a group of images with animation-->
-        <a id ="contact"></a>
-        <h1 >Let me help you build the digital space you need!</h1><br>
-       <p> <a class="button" href="mailto:salamahjimoh@gmail.com" target="_blank">    Hire Me</a></p>
-    </div><!--div 3 ends-->
-    
-
-</div><!--container div stops-->
-<div class= "footer">
-&nbsp;<p class= "footer-p">&copy;Salamah Jimoh 2021 <br> 
-<!--icon--> jimohsalamah@gmail.com<br>
-<!--icon--> +2348123038871</p><br>
-<!--
-<div class="icons">
-    <a href="https://wa.me/2348123038871"><img src="whatsapp.png" alt="whatsappicon"></a></img>
-    <a href="www.instagram.com/salamah_jimoh"> <img src="insta.jpeg" alt="instagramicon"></a></img>
-    <a href="https://www.facebook.com/salamah.jimoh.5"> <img src="fb.png" alt="fbicon"></a></img>
-    <a href="http:twitter.com/salamah_jimoh"> <img src="twitter.png" alt="tweeticon"></a></img>
-</div>-->
-</div>
-</div>
-</div><!--main id stops-->
+</footer>
+ </main>
+ <script src="main.js"></script>
+ 
 </body>
-<script>
-     const text=document.querySelector(".fancy")
-       const testContent=text.textContent;
-       const str=testContent.split("");
-       text.textContent="";
-       for(let i=0; i < str.length; i++){
-           text.innerHTML +="<span>" +str[i]+ "</span>";
-           console.log(i);
-       }
-
-       let char=0;
-       let timer=setInterval(onTick, 1000);
-       function onTick(){
-           
-       }
-
-       function onTick(){
-           const span =text.querySelectorAll('span')[char];
-          span.classList.add('style');
-          char++
-           if(char=== str.length){
-            complete();
-            return;
-           }
-       }
-      function complete(){
-           clearInterval(timer);
-           timer=null;
-       }
-    function OpenSideMenu(){
-        document.getElementById('sideMenu').style.width="200px";
-        document.getElementById('main').style.marginLeft="200px";
-    }
-    function CloseSideMenu(){
-        document.getElementById('sideMenu').style.width="";
-        document.getElementById('main').style.marginLeft="";
-    }
-</script>
+<!--JS here-->
 </html>
