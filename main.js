@@ -50,16 +50,50 @@ for(var i=0; i<menuItems.length; i++){
    document.getElementById('main').style.marginLeft=""; 
     })
 }
+/*
+Forms
+*/ 
+
+let collabName =document.getElementById('collab-name');
+let collabMail =document.getElementById('collab-email');
+let collabMessage =document.getElementById('collab-message');
+let sucess = document.getElementById('sucess');
+let error = document.getElementById('error')
+let contactName =document.getElementById('contact-name');
+let contactMail =document.getElementById('contact-mail');
+let contactMessage =document.getElementById('contact-message');
+let sucessContact = document.getElementById('contact-sucess');
+let errorContact = document.getElementById('contact-error')
 // Open collab form
 let openCollab = document.getElementById('open-collab-form');
 let collabForm = document.getElementById('collab');
+
 openCollab.addEventListener('click', ()=>{
     collabForm.style.display='block';
 })
 /// Close collab form on submit
 collabForm.addEventListener('submit', (e)=>{
     e.preventDefault();
-    collabForm.style.display ='none';
+    if(collabName.value==='' || collabMail ==='' || collabMessage ===''){
+     error.style.display='block';
+     collabName.style.border='1px solid red';
+     collabMail.style.border='1px solid red';
+     collabMessage.style.border='1px solid red';
+    }else{
+        collabName.style.border='1px solid black';
+        collabMail.style.border='1px solid black';
+        collabMessage.style.border='1px solid black';
+        collabName.value='';
+        collabMail.value='';
+        collabMessage.value='';
+        setTimeout(()=>{
+            sucess.style.display='block';
+        },1000)
+        setTimeout(()=>{
+            collabForm.style.display ='none';
+        },'5000');
+        error.style.display='none'
+    } 
 })
 // Open Hire form
 let openHire = document.getElementById('open-hire');
@@ -70,7 +104,26 @@ openHire.addEventListener('click', ()=>{
 /// Close contact form on submit
 contactForm.addEventListener('submit', (e)=>{
     e.preventDefault();
-    contactForm.style.display ='none';
+    if(contactName.value==='' || contactMail ==='' || contactMessage ===''){
+        errorContact.style.display='block';
+        contactName.style.border='1px solid red';
+        contactMail.style.border='1px solid red';
+        contactMessage.style.border='1px solid red';
+       }else{
+        contactName.style.border='1px solid black';
+        contactMail.style.border='1px solid black';
+        contactMessage.style.border='1px solid black';
+        contactName.value='';
+        contactMail.value='';
+        contactMessage.value='';
+           setTimeout(()=>{
+               sucessContact.style.display='block';
+           },1000)
+           setTimeout(()=>{
+            contactForm.style.display ='none';
+           },'5000');
+           errorContact.style.display='none'
+       } 
 })
 // Display Info on enter
 function displayInfoOnEnter(image, info){
@@ -80,7 +133,7 @@ function displayInfoOnEnter(image, info){
 
 // Hide Info On leave
 function hideInfoOnLeave(image, info){
-    image.style.display='block';
+    image.style.display='flex';
     info.style.display ='none'
 }
 

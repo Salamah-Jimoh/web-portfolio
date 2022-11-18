@@ -34,7 +34,9 @@ ul{
         font-size:1.5rem;
 
         }
-        .btn:hover{
+        .btn:hover,
+        .btn:focus
+        {
             background-color: pink;
             color:white;
         }
@@ -64,7 +66,9 @@ nav li{
     display:inline;
     margin:1rem;
 }
-nav li :hover{
+nav li :hover,
+nav li :focus
+{
     padding:.5rem;
     background-color: pink;
     transition:.5s;
@@ -105,14 +109,19 @@ nav li :hover{
     margin-bottom: -1rem;
 }
 .intro-text{
-    background-image: linear-gradient(to right,pink,rgb(240, 113, 134));
+    background-image: linear-gradient(to right,rgb(42, 42, 42),black);
     display:grid;
     place-items: center;
     margin:auto;
     width:80%;
     border-radius: 1rem;
 }
+.intro-text h2{
+    color:white;
+    margin-bottom: 0rem;
+}
 .intro-text p{
+    color:white;
     margin:.7rem;
     text-align: center;
     padding: 1rem;
@@ -168,11 +177,12 @@ display:flex;
 .container-company p{
     font-size:2rem;
     margin:1rem;
- border-bottom: 2px dashed pink;
 }
 .container-company a{
     color:black;
+    border-bottom:2px dashed pink ;
 }
+
 /*Projects*/
 .container-project{
     display:flex;
@@ -189,6 +199,9 @@ display:flex;
     max-width: 80%;
     height:auto;
     margin:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -222,21 +235,35 @@ padding: 1rem;
 }
 .hire-container p{ 
  margin:1rem 3.5rem; 
+ text-align: center;
 }
 .center-hire{
     display:flex;
     align-items: center;
-    justify-content: center;
-    float:left; 
+    justify-content: center; 
     margin-left: 8rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
 }
+
 
 .big-text{
     font-weight: bold;
     font-size: 1.7rem;
 }
 /*Contact*/
-
+.success , .error{
+background-color: aqua;
+color:white;
+padding:.5rem;
+width:50%;
+text-align: center;
+margin:1rem;
+display:none;
+}
+.error{
+    background-color: red;
+}
 .contact-container{
     display:none;
     margin-top: 1rem;
@@ -275,7 +302,9 @@ margin: .5rem;
     transition: 1s;
     border-radius:.5rem
 }
-.submit:hover{
+.submit:hover,
+.submit:focus
+{
     background-color: pink;
 }
 /*Resume*/
@@ -302,7 +331,8 @@ flex:1;
     cursor:pointer;
     padding:.4rem;
 }
-.socials i:hover{
+.socials i:hover,
+.socials i:focus{
     background-color: pink;
     border-radius: 100%;
 }
@@ -358,7 +388,8 @@ flex:1;
     transition:0.5s;
     cursor: pointer;
 }
-.mobile-menu a:hover{
+.mobile-menu a:hover,
+.mobile-menu a:focus{
         color:grey; 
         background-color: #000;  
 }
@@ -409,13 +440,24 @@ flex:1;
         margin-bottom: 3rem;
        }
       .center-hire{
-        margin-top: -2.5rem;
+        margin-top: -1rem;
         margin-left: 2.5rem;
       }
        .footer-container > div{
         margin:1rem;
        }
    
+       .project1,
+        .project2,
+        .project3,
+        .project4,
+        .project5,
+        .project6
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 }
 
 
