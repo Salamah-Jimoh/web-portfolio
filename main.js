@@ -72,6 +72,7 @@ openCollab.addEventListener('click', ()=>{
     collabForm.style.display='block';
 })
 /// Close collab form on submit
+/*
 collabForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     if(collabName.value==='' || collabMail ==='' || collabMessage ===''){
@@ -94,7 +95,7 @@ collabForm.addEventListener('submit', (e)=>{
         },'5000');
         error.style.display='none'
     } 
-})
+})*/
 // Open Hire form
 let openHire = document.getElementById('open-hire');
 let contactForm = document.getElementById('contact');
