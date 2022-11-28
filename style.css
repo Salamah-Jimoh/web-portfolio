@@ -397,7 +397,8 @@ flex:1;
     font-size: 2rem;
     cursor:pointer;
     display: block;
-   margin-right: 1rem;
+   margin-right: 1.5rem;
+   border: 1px solid red;
 
 }
 #menu-close{
