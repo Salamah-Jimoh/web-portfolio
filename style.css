@@ -48,9 +48,10 @@ nav{
     background-color: black;
     color:white;
     padding:.65rem;
-    max-width:100%;
-    position:fixed;
+    width:100%;
+    overflow: hidden;
     top:0;
+    position: fixed;
 }
 .logo{
     flex:5;
@@ -368,6 +369,7 @@ flex:1;
 
 .mobile-menu{
     display:block; 
+    flex:2;
 }
 .menu-expand{
     height:50%;
@@ -398,6 +400,7 @@ flex:1;
     cursor:pointer;
     display: block;
    margin-right: 2rem;
+   border: 1px solid red;
 
 }
 #menu-close{
@@ -410,6 +413,9 @@ flex:1;
 }
 .hero-img{
     margin-bottom: 2rem;
+
+}
+.logo{
 
 }
 /*Services*/
