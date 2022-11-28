@@ -362,6 +362,10 @@ flex:1;
 @media(max-width:768px){
 
     /*Nav*/
+    nav{
+        width:100%;
+        overflow-x: hidden;
+    }
 .menu{
     display:none;
 }
