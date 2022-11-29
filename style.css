@@ -5,6 +5,8 @@
 body{
     font-size:1.2rem;
     transition: .5s;
+    position: relative;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
