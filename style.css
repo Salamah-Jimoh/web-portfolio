@@ -363,6 +363,7 @@ flex:1;
 @media(max-width:768px){
 body{
     overflow-x: hidden;
+    position: relative;
 }
     /*Nav*/
 .menu{
@@ -370,7 +371,8 @@ body{
 }
 
 .mobile-menu{
-    display:block; 
+    display:block;
+
 }
 .menu-expand{
     height:50%;
