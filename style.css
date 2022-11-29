@@ -366,6 +366,9 @@ body{
     position: relative;
 }
     /*Nav*/
+    nav{
+        max-width: 100%;
+    }
 .menu{
     display:none;
 }
