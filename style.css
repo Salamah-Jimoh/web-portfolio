@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
     font-size:1.2rem;
@@ -369,7 +370,7 @@ body{
 }
     /*Nav*/
     nav{
-        max-width: 95%;
+        max-width: 100%;
     }
 .menu{
     display:none;
@@ -407,7 +408,7 @@ body{
     font-size: 2rem;
     cursor:pointer;
     display: block;
-   margin-right: 2rem;
+    margin-right: 1rem;
 
 }
 #menu-close{
@@ -433,7 +434,10 @@ flex:4;
   .footer-container{
   flex-wrap:wrap; 
     }
-   
+    .container-service{
+        align-items: center;
+        justify-content: center;
+        }
     .container-service  div{
         margin:2rem;
     }
